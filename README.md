@@ -1,6 +1,7 @@
 <div align="left">
-  <img align="right" height="150" src="https://avatars.githubusercontent.com/u/96272114?s=400&u=52f594de121e7a3ad75d9027c6505674858ab5d9&v=4" alt="Foto de Perfil - André Schons"  />
 
+  <img align="right" height="150" src="https://avatars.githubusercontent.com/u/96272114?s=400&u=52f594de121e7a3ad75d9027c6505674858ab5d9&v=4" alt="Foto de Perfil - André Schons" />
+  
   <h2 align="left">Olá meu nome é André</h2>
 
   #### 💻 Desenvolvedor Back-end | Java & Spring Boot
@@ -50,10 +51,10 @@ Este projeto demonstra a capacidade de construir uma API completa para gerenciam
   <a href="mailto:andreferens86@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
-  <a href="www.linkedin.com/in/andreschons/" target="_blank">
+  <a href="https://www.linkedin.com/in/andreschons/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
-  <a href="5547992066442" target="_blank">
+  <a href="https://wa.me/5547992066442" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo"  />
   </a>
 </div>
