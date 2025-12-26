@@ -2,7 +2,7 @@
 
   <img align="right" height="150" src="https://avatars.githubusercontent.com/u/96272114?s=400&u=52f594de121e7a3ad75d9027c6505674858ab5d9&v=4" alt="Foto de Perfil - André Schons" />
   
-  <h2 align="left">Olá meu nome é André</h2>
+  <h2 align="left">Olá meu nome é André Schons</h2>
 
   #### 💻 Desenvolvedor Back-end | Java & Spring Boot
 
@@ -69,6 +69,7 @@ Este projeto demonstra a capacidade de construir uma API completa para gerenciam
 </div>
 
 ###
+
 
 <br clear="both">
 
