@@ -1,76 +1,121 @@
 <div align="left">
+  <img 
+    align="right" 
+    height="150" 
+    src="https://avatars.githubusercontent.com/u/96272114?s=400&u=52f594de121e7a3ad75d9027c6505674858ab5d9&v=4" 
+    alt="Foto de Perfil - André Schons" 
+  />
 
-  <img align="right" height="150" src="https://avatars.githubusercontent.com/u/96272114?s=400&u=52f594de121e7a3ad75d9027c6505674858ab5d9&v=4" alt="Foto de Perfil - André Schons" />
-  
-  <h2 align="left">Olá meu nome é André Schons</h2>
+  <h2>Olá, meu nome é André Schons 👋</h2>
 
-  #### 💻 Desenvolvedor Back-end | Java & Spring Boot
+  #### 💻 Desenvolvedor Back-end | Java (Spring Boot) & TypeScript (NestJS)
 
   <p>
-    Sou um desenvolvedor focado em criar APIs robustas e escaláveis, utilizando o ecossistema Java com Spring Boot.
-    Minha paixão é transformar requisitos complexos em código limpo e eficiente, com forte experiência em modelagem de dados e segurança de aplicações.
+    Sou desenvolvedor back-end focado na construção de <strong>APIs robustas, seguras e escaláveis</strong>, 
+    utilizando principalmente <strong>Java com Spring Boot</strong> e <strong>TypeScript com NestJS</strong>.
+    Tenho forte atuação em <strong>modelagem de dados</strong>, <strong>regras de negócio complexas</strong> e 
+    <strong>boas práticas de arquitetura</strong>, sempre buscando código limpo, manutenível e performático.
   </p>
 </div>
 
 <br clear="both">
 
+---
+
 ### 🛠️ Tecnologias Principais
 
-<div align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo" /> 
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="spring logo" />
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo" />
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="postgresql logo" />
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" height="30" alt="hibernate logo" />
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo" /> <img width="12" /> 
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo" /> 
-  <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" height="30" alt="maven logo" />
-  <img width="12" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" height="30" alt="postman logo" />
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="Spring Boot" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="TypeScript" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="30" alt="NestJS" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="MySQL" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="PostgreSQL" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" height="30" alt="Hibernate / JPA" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="Git" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="GitHub" />
+  <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" height="30" alt="Maven" />
+  <img width="12" />
+
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" height="30" alt="Postman" />
 </div>
 
-###
+---
 
-## 🏆 Projeto em Destaque: Sistema de Agendamentos (Barbearia/Salão)
+## 🏆 Projeto em Destaque  
+### Sistema de Agendamentos (Barbearia / Salão)
 
-[![API RESTful de Gestão de Agendamentos (Barbearia/Salão)](https://img.shields.io/badge/Repositório-Ver%20Projeto-0077B5?style=for-the-badge&logo=github)](https://github.com/AndreSchons/sistema-agendamentos-barbearia)
+[![Ver Projeto](https://img.shields.io/badge/Repositório-Ver%20Projeto-0077B5?style=for-the-badge&logo=github)](https://github.com/AndreSchons/sistema-agendamentos-barbearia)
 
-Este projeto demonstra a capacidade de construir uma API completa para gerenciamento de agendas e recursos, com foco em:
+API RESTful completa para gerenciamento de agendamentos, clientes e profissionais, construída com foco em **regras reais de negócio**, organização e escalabilidade.
 
-* **Tecnologias:** Desenvolvido com **Java 21** e **Spring Boot 3** para performance e confiabilidade.
-* **Regras de Negócio:** Implementação de validações cruciais como **detecção de conflitos de horário** (sobreposição) e gerenciamento de disponibilidade de profissionais.
-* **Persistência de Dados:** Modelagem e mapeamento JPA/Hibernate com **MySQL/PostgreSQL**, utilizando relacionamentos complexos (`Many-to-One`, `Many-to-Many`).
-* **Segurança:** Utilização de **Spring Security** para controle de acesso baseado em papéis (Cliente vs. Administrador).
-* **Documentação:** API totalmente documentada via **Swagger/OpenAPI** para facilitar a integração.
+**Principais destaques:**
 
-###
+- 🚀 **Stack:**  
+  Desenvolvido com **Java 21** e **Spring Boot 3**
+
+- 🧠 **Regras de Negócio:**  
+  - Detecção de conflitos de horários (sobreposição)  
+  - Controle de disponibilidade por profissional  
+  - Validações robustas para agendamentos
+
+- 🗃️ **Persistência de Dados:**  
+  - JPA / Hibernate  
+  - Banco de dados **MySQL** ou **PostgreSQL**  
+  - Relacionamentos `@ManyToOne` e `@ManyToMany`
+
+- 🔐 **Segurança:**  
+  Implementação de **Spring Security** com controle de acesso baseado em papéis  
+  (Cliente × Administrador)
+
+- 📄 **Documentação:**  
+  API documentada com **Swagger / OpenAPI**, facilitando testes e integrações
+
+---
 
 <h2>🔗 Conecte-se Comigo!</h2>
 
 <div align="left">
-  <span style="text-decoration: none;">
-    <a href="https://www.instagram.com/schons_andre/" target="_blank">
-      <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-    </a>
-  </span>
-  <span style="text-decoration: none;">
-    <a href="mailto:andreferens86@gmail.com" target="_blank">
-      <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-    </a>
-  </span>
-  <span style="text-decoration: none;">
-    <a href="https://www.linkedin.com/in/andreschons/" target="_blank">
-      <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-    </a>
-  </span>
-  <span style="text-decoration: none;">
-    <a href="https://wa.me/5547992066442" target="_blank">
-      <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo"  />
-    </a>
-  </span>
+  <a href="https://www.instagram.com/schons_andre/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="35" />
+  </a>
+
+  <a href="mailto:andreferens86@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="35" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/andreschons/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="35" />
+  </a>
+
+  <a href="https://wa.me/5547992066442" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" height="35" />
+  </a>
 </div>
 
-###
-
+---
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/AndreSchons/AndreSchons/output/snake.svg" alt="Snake animation" />
+<img 
+  src="https://raw.githubusercontent.com/AndreSchons/AndreSchons/output/snake.svg" 
+  alt="Snake animation" 
+/>
