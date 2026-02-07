@@ -119,7 +119,7 @@ API RESTful completa desenvolvida com foco em **cenários reais de negócio**, o
 
 ### 🔐 Segurança
 
-- Autenticação e autorização com **Spring Security**
+- Autenticação e autorização com **Spring Security** e **OAuth**
 - Controle de acesso baseado em perfis:
   - Administrador
   - Cliente
