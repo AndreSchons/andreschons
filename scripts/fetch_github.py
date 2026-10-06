@@ -11,23 +11,60 @@ DATA.mkdir(exist_ok=True)
 
 USERNAME = os.getenv("GH_PROFILE_USER", "AndreSchons")
 TOKEN = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
+
 if not TOKEN:
     raise SystemExit("GH_TOKEN/GITHUB_TOKEN is required.")
 
 today = datetime.now(timezone.utc).date()
-to_dt = datetime(today.year, today.month, today.day, 23, 59, 59, tzinfo=timezone.utc)
-from_dt = to_dt - timedelta(days=370)
+to_dt = datetime(
+    today.year, today.month, today.day, 23, 59, 59, tzinfo=timezone.utc
+)
+from_dt = to_dt - timedelta(days=364)
 
-query = r'''\nquery($login:String!, $from:DateTime!, $to:DateTime!) {\n  user(login:$login) {\n    login\n    name\n    avatarUrl(size: 460)\n    followers { totalCount }\n    repositories(ownerAffiliations: OWNER, isFork: false) { totalCount }\n    contributionsCollection(from:$from, to:$to) {\n      contributionCalendar {\n        totalContributions\n        weeks {\n          contributionDays {\n            date\n            contributionCount\n            contributionLevel\n            weekday\n          }\n        }\n      }\n      totalCommitContributions\n      totalIssueContributions\n      totalPullRequestContributions\n      totalPullRequestReviewContributions\n      restrictedContributionsCount\n    }\n  }\n}\n'''
-
-payload = json.dumps({
-    "query": query,
-    "variables": {
-        "login": USERNAME,
-        "from": from_dt.isoformat().replace("+00:00", "Z"),
-        "to": to_dt.isoformat().replace("+00:00", "Z"),
+query = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    login
+    name
+    avatarUrl(size: 460)
+    followers {
+      totalCount
     }
-}).encode()
+    repositories(ownerAffiliations: OWNER, isFork: false) {
+      totalCount
+    }
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            date
+            contributionCount
+            contributionLevel
+            weekday
+          }
+        }
+      }
+      totalCommitContributions
+      totalIssueContributions
+      totalPullRequestContributions
+      totalPullRequestReviewContributions
+      restrictedContributionsCount
+    }
+  }
+}
+"""
+
+payload = json.dumps(
+    {
+        "query": query,
+        "variables": {
+            "login": USERNAME,
+            "from": from_dt.isoformat().replace("+00:00", "Z"),
+            "to": to_dt.isoformat().replace("+00:00", "Z"),
+        },
+    }
+).encode("utf-8")
 
 req = urllib.request.Request(
     "https://api.github.com/graphql",
@@ -35,18 +72,22 @@ req = urllib.request.Request(
     headers={
         "Authorization": f"Bearer {TOKEN}",
         "Content-Type": "application/json",
-        "User-Agent": "AndreSchons-profile-readme"
+        "User-Agent": "AndreSchons-profile-readme",
     },
     method="POST",
 )
 
-with urllib.request.urlopen(req, timeout=30) as r:
-    result = json.load(r)
+try:
+    with urllib.request.urlopen(req, timeout=30) as response:
+        result = json.load(response)
+except urllib.error.HTTPError as exc:
+    body = exc.read().decode("utf-8", errors="replace")
+    raise SystemExit(f"GitHub GraphQL HTTP {exc.code}: {body}") from exc
 
 if result.get("errors"):
-    raise SystemExit(json.dumps(result["errors"], indent=2))
+    raise SystemExit(json.dumps(result["errors"], indent=2, ensure_ascii=False))
 
-user = result["data"]["user"]
+user = result.get("data", {}).get("user")
 if not user:
     raise SystemExit(f"GitHub user not found: {USERNAME}")
 
@@ -61,5 +102,10 @@ out = {
     },
     "contributions": user["contributionsCollection"],
 }
-(DATA / "github.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-print(f"Wrote {DATA / 'github.json'}")
+
+output_path = DATA / "github.json"
+output_path.write_text(
+    json.dumps(out, ensure_ascii=False, indent=2),
+    encoding="utf-8",
+)
+print(f"Wrote {output_path}")
