@@ -1,1 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 430"><rect width="100%" height="100%" rx="14" fill="#0d1117"/><text x="32" y="60" fill="#f0f6fc" font-family="monospace" font-size="24" font-weight="700">André Schons</text><text x="32" y="96" fill="#8b949e" font-family="monospace" font-size="15">Backend Developer · Autumn Softwares</text><text x="32" y="145" fill="#39d353" font-family="monospace" font-size="17">Java · Spring Boot · TypeScript · NestJS</text><text x="32" y="180" fill="#c9d1d9" font-family="monospace" font-size="15">GitHub stats will be generated automatically.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 430" role="img" aria-label="GitHub stats">
+<style>
+  .bg { fill:#0d1117; }
+  .h1 { fill:#f0f6fc; font:700 24px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .sub { fill:#8b949e; font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .num { fill:#39d353; font:700 22px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .lab { fill:#c9d1d9; font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .card { fill:#161b22; stroke:#30363d; stroke-width:1; }
+  .line { opacity:0; animation:in .45s ease forwards; }
+  @keyframes in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+</style>
+<rect class="bg" width="100%" height="100%" rx="14"/>
+<text x="32" y="46" class="h1">André Schons</text>
+<text x="32" y="72" class="sub">Backend Developer · Autumn Softwares</text>
+<text x="32" y="96" class="sub">Santa Catarina, Brazil</text>
+<text x="32" y="122" class="sub">APIs · SaaS · ERP · Fiscal systems</text>
+
+<g class="line" style="animation-delay:0.00s">
+<rect class="card" x="32" y="168" width="290" height="72" rx="10"/>
+<text x="50" y="198" class="num">21</text>
+<text x="50" y="221" class="lab">repos</text>
+</g>
+<g class="line" style="animation-delay:0.08s">
+<rect class="card" x="344" y="168" width="290" height="72" rx="10"/>
+<text x="362" y="198" class="num">21</text>
+<text x="362" y="221" class="lab">followers</text>
+</g>
+<g class="line" style="animation-delay:0.16s">
+<rect class="card" x="32" y="256" width="290" height="72" rx="10"/>
+<text x="50" y="286" class="num">1,009</text>
+<text x="50" y="309" class="lab">contribs</text>
+</g>
+<g class="line" style="animation-delay:0.24s">
+<rect class="card" x="344" y="256" width="290" height="72" rx="10"/>
+<text x="362" y="286" class="num">221</text>
+<text x="362" y="309" class="lab">commits</text>
+</g>
+<g class="line" style="animation-delay:0.32s">
+<rect class="card" x="32" y="344" width="290" height="72" rx="10"/>
+<text x="50" y="374" class="num">0</text>
+<text x="50" y="397" class="lab">pull reqs</text>
+</g>
+<g class="line" style="animation-delay:0.40s">
+<rect class="card" x="344" y="344" width="290" height="72" rx="10"/>
+<text x="362" y="374" class="num">0</text>
+<text x="362" y="397" class="lab">reviews</text>
+</g>
+<text x="32" y="414" class="sub">Java · Spring Boot · TypeScript · NestJS · PostgreSQL · Docker</text>
+</svg>

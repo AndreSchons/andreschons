@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 360"><rect width="100%" height="100%" rx="14" fill="#0d1117"/><text x="20" y="28" fill="#39d353" font-family="monospace" font-size="11">andre@github:~$ cat avatar.ascii</text><text x="60" y="175" fill="#c9d1d9" font-family="monospace" font-size="44" font-weight="700">AS</text><text x="20" y="320" fill="#8b949e" font-family="monospace" font-size="11">Your GitHub avatar becomes ASCII</text><text x="20" y="338" fill="#8b949e" font-family="monospace" font-size="11">after the first workflow run.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 318" role="img" aria-label="ASCII portrait">
+<style>
+  .bg { fill:#0d1117; }
+  .art { fill:#c9d1d9; font:8px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; white-space:pre; }
+  .prompt { fill:#39d353; font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .row { opacity:0; animation:type .08s linear forwards; }
+  @keyframes type { to { opacity:1; } }
+</style>
+<rect class="bg" width="100%" height="100%" rx="14"/>
+<text x="18" y="22" class="prompt">andre@github:~$ cat avatar.ascii</text>
+
+<text class="art row" style="animation-delay:0.000s" x="18" y="42">=====-------------::::::::::::::::::::..... .... ...</text>
+<text class="art row" style="animation-delay:0.025s" x="18" y="51">=====-----------::::::::::::::::..........   .......</text>
+<text class="art row" style="animation-delay:0.050s" x="18" y="60">====-----------:::::::::::::................   .....</text>
+<text class="art row" style="animation-delay:0.075s" x="18" y="69">====----------::::::::::::..........::--:.  ........</text>
+<text class="art row" style="animation-delay:0.100s" x="18" y="78">===----------::::::::::::........-#%@@%#+==-....  ..</text>
+<text class="art row" style="animation-delay:0.125s" x="18" y="87">==-----------::::::::::....... =#%@@@%*==+*#*-.</text>
+<text class="art row" style="animation-delay:0.150s" x="18" y="96">=-----------::::::::::.......:*@@%%%@%%#+*#%%#=</text>
+<text class="art row" style="animation-delay:0.175s" x="18" y="105">=-----------:::::::::....... #@@@@@%%#%%%##%%##+  ..</text>
+<text class="art row" style="animation-delay:0.200s" x="18" y="114">-----------:::::::::....... :@@%@@@@@@@@%#%@@%##:</text>
+<text class="art row" style="animation-delay:0.225s" x="18" y="123">-----------:::::::::....... +@%%#**####++++*@@%*.</text>
+<text class="art row" style="animation-delay:0.250s" x="18" y="132">-----------::::::::.......  #%*%%%#++++++++*@@#:</text>
+<text class="art row" style="animation-delay:0.275s" x="18" y="141">-----------::::::::.......  ***#%%%++%@@%%**@@-</text>
+<text class="art row" style="animation-delay:0.300s" x="18" y="150">===---------::::::::....... -#*++**++*##*++*%+</text>
+<text class="art row" style="animation-delay:0.325s" x="18" y="159">=-----------:::::::........ .**++**++++++++**.</text>
+<text class="art row" style="animation-delay:0.350s" x="18" y="168">=-----------:::::::........ .+**#%###*++++--.</text>
+<text class="art row" style="animation-delay:0.375s" x="18" y="177">=-----------::::::........   -#*%%%%%#+++.</text>
+<text class="art row" style="animation-delay:0.400s" x="18" y="186">=-----------:::::=*##***+::=+*%#*##*****:</text>
+<text class="art row" style="animation-delay:0.425s" x="18" y="195">=-----------:::::+=+%@%@@##@@%#@%%%%%%**:</text>
+<text class="art row" style="animation-delay:0.450s" x="18" y="204">=-----------:::::##=-=*@@%%@@##*##%##****=.     ..</text>
+<text class="art row" style="animation-delay:0.475s" x="18" y="213">==----------:::=*%@@#=-:*##@@##*******%%#*+=.</text>
+<text class="art row" style="animation-delay:0.500s" x="18" y="222">==----------::*@@#%*#%*=:=%@%##****#%@@#**#%*=:.</text>
+<text class="art row" style="animation-delay:0.525s" x="18" y="231">===---------:+@@***+--===--#%=--==#@@@@@@@@%*==-:.</text>
+<text class="art row" style="animation-delay:0.550s" x="18" y="240">====---------@@##%#%#*+=:...*#-=*%@@@%%#**++*+===+=-</text>
+<text class="art row" style="animation-delay:0.575s" x="18" y="249">=====------:+@@%*+++++++=-:..-#@@@@@#*++=+++*+=++===</text>
+<text class="art row" style="animation-delay:0.600s" x="18" y="258">=====------:#@@%#@@%*++===--:.-%@@@#**++**+*++*++=++</text>
+<text class="art row" style="animation-delay:0.625s" x="18" y="267">=====-------%@@@@%@@#++=--==-:..=#%######%#***####%#</text>
+<text class="art row" style="animation-delay:0.650s" x="18" y="276">======-----*@@@@@%*+++========-:. .+#%%##@@#%@@%%#*+</text>
+<text class="art row" style="animation-delay:0.675s" x="18" y="285">=====------@@@@@@@@#@@%*+======-::..+*%##@@%@@@%###*</text>
+</svg>
