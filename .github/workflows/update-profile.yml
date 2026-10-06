@@ -1,0 +1,55 @@
+name: Update terminal profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/profile_info.json"
+      - "scripts/**"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-profile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch GitHub data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PROFILE_USER: AndreSchons
+        run: python scripts/fetch_github.py
+
+      - name: Render contribution heatmap
+        run: python scripts/render_heatmap_svg.py
+
+      - name: Render stats
+        run: python scripts/render_stats_svg.py
+
+      - name: Render ASCII avatar
+        run: python scripts/make_ascii_svg.py
+
+      - name: Commit generated profile art
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/github.json contrib-heatmap.svg stats.svg andre-ascii.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update terminal profile"
+          git push

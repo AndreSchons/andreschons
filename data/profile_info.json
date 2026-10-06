@@ -1,0 +1,15 @@
+{
+  "username": "AndreSchons",
+  "display_name": "André Schons",
+  "handle": "andre",
+  "role": "Backend Developer",
+  "company": "Autumn Softwares",
+  "location": "Santa Catarina, Brazil",
+  "focus": "APIs · SaaS · ERP · Fiscal systems",
+  "stack": [
+    "Java · Spring Boot",
+    "TypeScript · NestJS",
+    "PostgreSQL · Prisma",
+    "Docker · Redis"
+  ]
+}
