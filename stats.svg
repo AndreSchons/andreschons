@@ -22,12 +22,12 @@
 </g>
 <g class="line" style="animation-delay:0.08s">
 <rect class="card" x="344" y="168" width="290" height="72" rx="10"/>
-<text x="362" y="198" class="num">20</text>
+<text x="362" y="198" class="num">21</text>
 <text x="362" y="221" class="lab">followers</text>
 </g>
 <g class="line" style="animation-delay:0.16s">
 <rect class="card" x="32" y="256" width="290" height="72" rx="10"/>
-<text x="50" y="286" class="num">1,178</text>
+<text x="50" y="286" class="num">1,207</text>
 <text x="50" y="309" class="lab">contribs</text>
 </g>
 <g class="line" style="animation-delay:0.24s">
